@@ -28,7 +28,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
 
   @override
   Widget build(BuildContext context) {
-    animation =CurvedAnimation(parent: animationController,curve:Curves.bounceInOut);//easeInOut
+    animation =CurvedAnimation(parent: animationController,curve:Curves.easeInOut);//easeInOut-bounceInOut
     animation = Tween(begin: -0.5,end: 0.5).animate(animation);
     return Scaffold(
       appBar: AppBar(
